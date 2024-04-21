@@ -4,8 +4,6 @@ public class IfElseStatementTheme {
     public static void main(String[] args) {
         String gender = "мужской";
         int age = 25;
-        double heigh = 0.8;
-        String name = "Michael";
         System.out.println("1. Перевод псевдокода на язык Java");
         if (gender != "мужской") {
             System.out.println("Добрый день, молодой человек");
@@ -17,11 +15,13 @@ public class IfElseStatementTheme {
         } else {
             System.out.println("Вы можете проходить только в присутствии взрослого");
         }
+        double heigh = 0.8;
         if (heigh < 1.8) {
             System.out.println("Вы допущены к данному аттракциону");
         } else {
             System.out.println("К сожалению, вы не можете пройти");
         }
+        String name = "Michael";
         char firstLetter = name.charAt(0);
         if (firstLetter == 'M') {
             System.out.println("Присаживайтесь за первый стол");
@@ -79,41 +79,41 @@ public class IfElseStatementTheme {
         }
         if (a1 == a2 && b1 != b2 && c1 != c2) {
             System.out.println(digitOne + " и " + digitTwo +
-                    "имеют одинаковую цифру " + a1 + " в разряде сотни");
+                    " имеют одинаковую цифру " + a1 + " в разряде сотни");
         }
         if (a1 != a2 && b1 == b2 && c1 != c2) {
             System.out.println(digitOne + " и " + digitTwo +
-                    "имеют одинаковую цифру " + b1 + " в разряде десятки");
+                    " имеют одинаковую цифру " + b1 + " в разряде десятки");
         }
         if (a1 != a2 && b1 != b2 && c1 == c2) {
             System.out.println(digitOne + " и " + digitTwo +
-                    "имеют одинаковую цифру " + c1 + " в разряде единицы");
+                    " имеют одинаковую цифру " + c1 + " в разряде единицы");
         }
         if (a1 == a2 && b1 == b2 && c1 != c2) {
             System.out.println(digitOne + " и " + digitTwo + 
-                    "имеют одинаковые цифры " + a1 + " и " + b1 + " в разрядах сотен и десятков");
+                    " имеют одинаковые цифры " + a1 + " и " + b1 + " в разрядах сотен и десятков");
         }
         if (a1 != a2 && b1 == b2 && c1 == c2) {
             System.out.println(digitOne + " и " + digitTwo + 
-                    "имеют одинаковые цифры " + b1 + " и " + c1 + " в разряде десятков и единиц ");
+                    " имеют одинаковые цифры " + b1 + " и " + c1 + " в разряде десятков и единиц ");
         }
         if (a1 == a2 && b1 != b2 && c1 == c2) {
             System.out.println(digitOne + "и " + digitTwo + 
-                    "имеют одинаковые цифры " + a1 + " и " + c1 + " в разряде сотен и единиц");
+                    " имеют одинаковые цифры " + a1 + " и " + c1 + " в разряде сотен и единиц");
         }
         if (a1 == a2 && b1 == b2 && c1 == c2) {
             System.out.println("Числа полностью одинаковые");
         }
         System.out.println();
         System.out.println("5. Определение символа по его коду");
-        char asciiCharacter = (char) '\u0057';
-        boolean numberIs = Character.isDigit(asciiCharacter);
+        char asciiCharacter = '\u0057';
+        boolean digitIs = Character.isDigit(asciiCharacter);
         boolean letterIs = Character.isLetter(asciiCharacter);
-        if (numberIs == false && letterIs == false) {
+        if (digitIs == false && letterIs == false) {
             System.out.println("Ваш код: " + asciiCharacter + " - не буква и не цифра");
             System.exit(0);
         }
-        if (numberIs == true) {
+        if (digitIs == true) {
             System.out.println("Ваш код: " + asciiCharacter + " - цифра");
             System.exit(0);
         }
@@ -146,11 +146,8 @@ public class IfElseStatementTheme {
         }
         System.out.println();
         System.out.println("7. Определение оценки по предметам");
-        int historyMarkPercent = 59;
-        int programmingMarkPercent = 92;
-        int averagePercent = (programmingMarkPercent + historyMarkPercent) / 2;
+        int historyMarkPercent = 59;;
         int historyMark = 0;
-        int programmingMark = 0;
         if (historyMarkPercent <= 60) {
             historyMark = 2;
             System.out.println("оценка по истории 2 ");
@@ -167,6 +164,8 @@ public class IfElseStatementTheme {
             historyMark = 5;
             System.out.println("оценка по истории 5 ");
         }
+        int programmingMark = 0;
+        int programmingMarkPercent = 92;
         if (programmingMarkPercent <= 60) {
             programmingMark = 2;
             System.out.println("оценка по программированию 2 ");
@@ -183,6 +182,7 @@ public class IfElseStatementTheme {
             programmingMark = 5;
             System.out.println("оценка по программированию 5 ");
         }
+        int averagePercent = (programmingMarkPercent + historyMarkPercent) / 2;
         int averageMark = (programmingMark + historyMark) / 2;
         System.out.println("средний балл оценок по предметам " + averageMark);
         System.out.println("средний процент оценок по предметам " + averagePercent);

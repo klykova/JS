@@ -31,8 +31,7 @@ public class VariablesTheme {
         System.out.println("Есть ли монитор у компьютера? " + screen);
         double screen2 = 23.8;
         System.out.println("Характеристики монитора: " + screen2);
-        System.out.println();
-        System.out.println("2. Расчет стоимости товара со скидкой");
+        System.out.println("\n2. Расчет стоимости товара со скидкой");
         int cost1 = 100;
         int cost2 = 200;
         int total1 = cost2 + cost1;
@@ -41,14 +40,12 @@ public class VariablesTheme {
         System.out.println("Сумма скидки= " + cost3);
         int total2 = total1 - cost3;
         System.out.println("Общая сумма товаров со скидкой= " + total2);
-        System.out.println();
-        System.out.println("3.Вывод слова JAVA");
+        System.out.println("\n3.Вывод слова JAVA");
         System.out.println("   J    a  v     v  a       ");
         System.out.println("   J   a a  v   v  a a     ");
         System.out.println("J  J  aaaaa  V V  aaaaa     ");
         System.out.println(" JJ  a     a  V  a     a");
-        System.out.println();
-        System.out.println("4.Вывод min и max значений целых числовых типов");
+        System.out.println("\n4.Вывод min и max значений целых числовых типов");
         byte b1 = -128;
         byte b2 = 127;
         System.out.println("байт минимум: " + b1);
@@ -109,8 +106,7 @@ public class VariablesTheme {
                  Integer.toBinaryString(digit2));
         System.out.println("Представление числа: " + digit4 + " в двоичной системе исчисления: " +
                  Integer.toBinaryString(digit3));
-        System.out.println();
-        System.out.println("6.Вывод символов и их кодов");
+        System.out.println("\n6.Вывод символов и их кодов");
         char dollar = '$';
         char asterisk = '*';
         char atSign = '@';
@@ -121,8 +117,7 @@ public class VariablesTheme {
         System.out.println(atSign + " = 01000000");
         System.out.println(verticalBar + " = 01111100");
         System.out.println(tilde + " = 01111110");
-        System.out.println();
-        System.out.println("7. Вывод в консоль ASCII-арт Дюка");
+        System.out.println("\n7. Вывод в консоль ASCII-арт Дюка");
         char slash = '/';
         char slash2 = '\\';
         char underlining = '_';
@@ -135,8 +130,7 @@ public class VariablesTheme {
         System.out.println("" + slash + underlining +
                  underlining + underlining +
                  underlining + slash + slash2 + underlining + underlining + slash2);
-        System.out.println();
-        System.out.println("8. Вывод количества сотен, десятков и единиц числа");
+        System.out.println("\n8. Вывод количества сотен, десятков и единиц числа");
         int number = 123;
         System.out.println("Число " + number + " содержит:");
         int hundreds = number / 100;
@@ -145,8 +139,7 @@ public class VariablesTheme {
         System.out.println("десятков - " + dozens);
         int units = (number - hundreds * 100) - (dozens * 10);
         System.out.println("единиц - " + units);
-        System.out.println();
-        System.out.println("9. Вывод времени");
+        System.out.println("\n9. Вывод времени");
         int time = 86399;
         int hours = time / 3600;
         int time2 = time - hours * 3600;
